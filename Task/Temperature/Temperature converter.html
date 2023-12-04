@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Temperature Converter</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('download.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+  body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.converter {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+input[type="number"] {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+select, option {
+  padding: 5px;
+  font-size: 16px;
+}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  background-color: #f0f0f0;
+}
+
+.converter {
+  border: 1px solid #e2a7a7;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  background-color: #fce8e6;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #d98181;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e64d4d;
+}
+
+#result {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+  </style>
+</head>
+<body> 
+   <div class="converter">
+    <h2>Temperature Converter</h2>
+    <select id="conversionType">
+      <option value="fahrenheitToCelsius">Fahrenheit to Celsius</option>
+      <option value="celsiusToFahrenheit">Celsius to Fahrenheit</option>
+    </select>
+    <br><br>
+    <input type="number" id="temperatureInput" placeholder="Enter temperature" placeholder="resetTemperature">
+    <button onclick="convertTemperature()">Convert</button>
+        <button onclick="resetTemperature()">Reset</button>
+    <p id="result"></p>
+  </div>
+
+  <script src="Temp.js"></script>
+</body>
+</html>
+
+
